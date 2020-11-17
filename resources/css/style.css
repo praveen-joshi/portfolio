@@ -48,6 +48,7 @@ nav{
 .home_nav{
     width: 100%;
     position: absolute;
+    background-color: white;
 }
 .sticky{
     position: sticky;
@@ -75,10 +76,8 @@ nav{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color:  white;
-    text-transform: uppercase;
-    background-color: black;
-    border-radius: 50%;
+    border-bottom: 5px solid black;
+    color: black;
     font-size: 120%;
 }
 
@@ -101,6 +100,7 @@ header
 .thunder_parent{
     width: 100%;
     justify-content: center;
+    display: flex;
 }
 
 .thunder_wrap ul{
@@ -233,3 +233,20 @@ skills
 /******************************************************************* 
 Projects
 ********************************************************************/
+
+
+@media only screen and (max-width: 600px) {
+
+    .thunder_wrap ul li{
+        font-size: 60px;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
