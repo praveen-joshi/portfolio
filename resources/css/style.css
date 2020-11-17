@@ -1,0 +1,235 @@
+/******************************************************************* 
+Global Styles
+********************************************************************/
+
+
+/* #bdff4b */
+/* #5a31c2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:ital@1&family=Roboto+Slab:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3{
+    font-family: 'Roboto Slab';
+}
+h1{
+    padding-top: 5%;
+    
+}
+
+section{
+    min-height: 80vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+a{
+    color: gray;
+}
+/******************************************************************* 
+NavBar
+********************************************************************/
+nav{
+    z-index: 9;
+}
+.home_nav{
+    width: 100%;
+    position: absolute;
+}
+.sticky{
+    position: sticky;
+    top:0; 
+    right: 0; 
+    z-index: 9;
+    width: 100%;
+}
+
+.dark_nav{
+    box-shadow: 2px 2px black;
+    background-color: 	whitesmoke;
+    color: white;
+
+}
+
+.light_nav{
+    background-color: white;
+    box-shadow: 2px 2px black;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:  black;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:  white;
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 120%;
+}
+
+/******************************************************************* 
+Home Page
+********************************************************************/
+
+header
+{
+    padding-top: 120px;
+    min-height: 100vh;
+    height: 500px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* thundet Effect  */
+
+.thunder_parent{
+    width: 100%;
+    justify-content: center;
+}
+
+.thunder_wrap ul{
+    list-style: none;
+    display: flex;
+}
+
+.thunder_wrap ul li{
+    animation: thunder 1s infinite linear;
+    font-size: 100px;
+}
+
+@keyframes thunder{
+    0%{
+    }
+    70%{
+        color: orange;
+    }
+    80%{
+        color: orange;
+        text-shadow: 0 0 13px #FF0000, 0 0 15px #0000FF;
+    }
+}
+
+/******************************************************************* 
+About me
+********************************************************************/
+.about_me{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 62%, rgba(0,0,0,0.83) 78%), url("../images/Capture.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/******************************************************************* 
+Education
+********************************************************************/
+
+.education{
+    background:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.9)), url("../images/bg1.gif");
+    background-size: cover;
+    color: white;
+    padding-left: 5%;
+}
+
+
+.edu-name{
+    font-size:120%;
+    color: var(--first-color);
+}
+.edu-inst{
+    font-size:100%;
+}
+.edu-con{
+    font-size:80%;
+    color: gray;
+}
+
+
+
+/******************************************************************* 
+Resume
+********************************************************************/
+
+.resume{
+    /* background:linear-gradient(rgba(51, 145, 233, 0.829),rgba(51, 145, 233, 0.3)), url("../images/bg1.gif"); */
+    background:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.9)), url("../images/bg1.gif");
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+a.resume-btn{
+    padding: 1%;
+    color: white;
+    background-color: #7579e7;
+    text-decoration: none;
+    border: 5px solid;
+}
+
+a.resume-btn:hover{
+    padding: 1%;
+    background-color: white;
+    color: #7579e7;
+    text-decoration: none;
+    border: 5px solid;
+}
+
+/******************************************************************* 
+Contact me
+********************************************************************/
+.contact-box{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+.contact-box:hover{
+    text-decoration: none;
+    color: white;
+    background-color:black;
+
+}
+.contact_icon{
+    font-size: 200px;
+}
+
+
+/******************************************************************* 
+Footer
+********************************************************************/
+
+footer{
+    color: grey;
+    background-color: black;
+    overflow: hidden;
+    padding: 1%;
+}
+
+
+/*-----------------------------
+skills
+-------------------------------*/
+
+
+
+/******************************************************************* 
+Projects
+********************************************************************/
